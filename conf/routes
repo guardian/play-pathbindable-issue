@@ -8,6 +8,9 @@ GET     /                           controllers.HomeController.index
 
 GET     /dog/:dog                           controllers.HomeController.dogDescription(dog: model.Dog)
 
+GET     /apple/:apple                       controllers.HomeController.appleChecker(apple: model.Apple)
+
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 

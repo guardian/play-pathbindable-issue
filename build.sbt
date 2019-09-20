@@ -10,7 +10,7 @@ scalaVersion := "2.13.0"
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % Test
 
-routesImport ++= Seq("model.DogBinding._")
+routesImport ++= Seq("model.DogBinding._", "model.AppleBinding._")
 
 
 // Adds additional packages into Twirl
