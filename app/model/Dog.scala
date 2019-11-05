@@ -6,7 +6,7 @@ case class Dog(age: Int)
 
 object DogBinding {
 
-  implicit val pathBinder = new PathBindable[Dog] {
+  implicit val pathBinderDog: PathBindable[Dog] = new PathBindable[Dog] {
     override def bind(key: String, value: String): Either[String, Dog] = {
       Right(Dog(value.toInt))
     }
